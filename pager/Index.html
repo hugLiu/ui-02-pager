@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>page组件</title>     
+   
+    <link rel="stylesheet" href="./bootstrap.min.css"> 
+ <link rel="stylesheet" href="./font-awesome.min.css">
+
+    <script src="./jquery-3.1.1.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+
+    <script src="./pager.min.js"></script>  
+</head>
+<body> 
+    <h2>page 实例</h2>
+    
+      <so:pager :id="pager" :pagesize="_pageSize" :count="_count" :items="15" :onselectitem="selectPage" ref="page"></so:pager>
+
+
+    
+    <script>  
+	  var _pageSize = 3,
+            _count = 100;
+
+
+        var selectPage = function(event) {
+
+        }
+ 
+    	 
+         
+    </script>
+</body>
+</html>
